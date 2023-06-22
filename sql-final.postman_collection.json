@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "8edc989d-811c-4c1c-be8e-0c83266761ad",
+		"name": "sql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"shk\",\r\n    \"lastName\":\"shk\",\r\n    \"gender\":\"male\",\r\n    \"hobbies\":\"good\",\r\n    \"role\":\"employee\",\r\n    \"email\":\"asd22@mailinator.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"data\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/manager/department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"department_id\":11,\r\n    \"category_id\":11,\r\n    \"removeId\":[1],\r\n    \"e_id\":[],\r\n    \"salary\":\"100\",\r\n    \"location\":\"ind\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/manager/department"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/management?limit=52&page=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/management?limit=52&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"management"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "52"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"data\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"data\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/query1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/query1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/query2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/query2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/management/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/management/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"management",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
